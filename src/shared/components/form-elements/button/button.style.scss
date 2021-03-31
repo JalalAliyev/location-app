@@ -1,0 +1,63 @@
+.button {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #ff0055;
+  border-radius: 4px;
+  background: linear-gradient(#dd0055, #ff0055);
+  color: white;
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: inline-block;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:active {
+    background: linear-gradient(#dd4382, #ff4382);
+    background-color: #ff4382;
+    border-color: #dd4382;
+  }
+
+  &-inverse {
+    background: transparent;
+    color: #ff0055;
+
+    &:hover,
+    &:active {
+      color: white;
+      background: linear-gradient(#dd0055, #ff0055);
+    }
+  }
+
+  &-danger {
+    background: linear-gradient(#600000, #830000);
+    border-color: #830000;
+
+    &:hover,
+    &:active {
+      background: linear-gradient(#e34343, #f34343);
+      border-color: #f34343;
+    }
+  }
+
+  &:disabled,
+  &:hover:disabled,
+  &:active:disabled {
+    background: linear-gradient(#aaa, #ccc);
+    color: #979797;
+    border-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  &-small {
+    font-size: 0.8rem;
+  }
+
+  &-big {
+    font-size: 1.5rem;
+  }
+}

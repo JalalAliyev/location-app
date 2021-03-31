@@ -1,0 +1,15 @@
+.auth {
+  width: 90%;
+  max-width: 25rem;
+  margin: 7rem auto;
+  padding: 0.5rem 0.6rem;
+
+  &__header {
+    text-align: center;
+  }
+
+  form {
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+}

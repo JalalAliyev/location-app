@@ -1,0 +1,49 @@
+.main-navigation {
+  &__menu-btn {
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2rem;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+  }
+
+  &__title {
+    color: white;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  &__header-nav {
+    display: none;
+  }
+
+  &__drawer-nav {
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-navigation__menu-btn {
+    display: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .main-navigation__header-nav {
+    display: block;
+  }
+}
