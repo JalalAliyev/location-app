@@ -2,7 +2,7 @@ const NodeGeocoder = require('node-geocoder');
 
 const geocoder = NodeGeocoder({
   provider: 'opencage',
-  apiKey: process.env.JWT_KEY,
+  apiKey: process.env.API_KEY,
 });
 
 const getCoordsForAddress = async (address) => {
